@@ -1,0 +1,208 @@
+
+/*Reseteo*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+/*CSS del contenedor Padre*/
+.contenedorPadreIndex{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: repeat(2, auto auto);
+    grid-template-areas:"barraHeader"
+                        "infoBody"
+}
+
+/*CSS del index*/
+
+.item{
+    position: absolute;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    position: relative;
+}
+
+header{
+    background-color: #fef4f8; 
+    height: min-content;
+    }
+
+.barraHeader{ 
+    grid-area: barraHeader;   
+    display: flex;   
+    justify-content:space-around;
+}
+
+.logoPortada{
+    justify-self: left;
+    align-self: left;
+}
+
+.menu li{
+    align-items: center;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: auto;
+    border: 1px solid;
+    border-style:solid;
+    margin: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: small;
+}
+
+.menu{
+    align-items: center;
+    position: relative;
+}
+
+
+
+
+
+.infoBody{
+    grid-area: infoBody;
+    display: flex;
+    align-items: center;
+    position : relative;
+	width : 100%;
+	height : 100%;
+    
+}
+
+
+
+.info{
+    font-family: 'Montserrat', sans-serif;
+    color: #e3b3c7;
+}
+
+.info h1{
+    font-size: 100px;
+}
+
+.info h3{
+    font-size: 45px;
+}
+
+
+
+
+
+footer{
+    
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    display:flex;
+    justify-content: center;
+    
+    height: min-content;
+    font-size: small;
+    text-transform: uppercase;
+    background-color: #fdeaf2;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*
+CSS DEL SHOP.HTML
+*/
+
+.titles{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 75px;
+    margin-left: 100px;
+    margin-top: 2%;
+    color: #c1819d;
+}
+
+.productos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    size: 50px;
+    
+}
+
+.espaciosProduc{
+    margin:90px;
+    width: 12%;    
+}
+
+/*
+CSS DEL SERVICIO.HTML
+*/
+
+.contenedorPadreServicio{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(2, auto auto);
+    grid-template-rows: repeat(2, auto auto);
+    grid-template-areas:"producto1 producto2"
+                        "producto3 producto4"
+}
+
+
+
+.containerServicios{
+}
+
+.serv1{
+    grid-area: producto1;
+}
+
+.serv2{
+    grid-area: producto2;
+}
+
+.serv3{
+    grid-area: producto3;
+    display: flex;
+}
+
+.serv4{
+    grid-area: producto4;
+    display: flex;
+}
+
+.servDescip{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 100px;
+    color: #e3b3c7;
+}
+
+/*CSS de Contacto*/
+
+.fondoContact{
+    background-image: url('/img/portadaContact.png');
+    background-repeat: no-repeat;
+    align-items: center;
+    z-index: 1 ;
+}
+
+.titleContact{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 75px;
+    margin-left: 100px;
+    margin-top: 2%;
+    color: #c1819d;
+    z-index: 2;
+}
+
+.infoNosotros{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 90px;
+    color: #e3b3c7;
+    text-align: left;
+    justify-content: left;
+}
