@@ -32,7 +32,7 @@ body{
 }
 
 header{
-    background-color: #fef4f8; 
+    background-image: linear-gradient(to left, rgb(204, 245, 222) , rgb(231, 202, 228)); 
     height: min-content;
     }
 
@@ -43,7 +43,9 @@ header{
 }
 
 .logoPortada{
+    padding-top: 10px;
     justify-self: left;
+    justify-content: center;
     align-self: left;
 }
 
@@ -65,9 +67,6 @@ header{
 }
 
 
-
-
-
 .infoBody{
     grid-area: infoBody;
     display: flex;
@@ -77,8 +76,6 @@ header{
 	height : 100%;
     
 }
-
-
 
 .info{
     font-family: 'Montserrat', sans-serif;
@@ -95,8 +92,6 @@ header{
 
 
 
-
-
 footer{
     
     width: 100%;
@@ -104,6 +99,7 @@ footer{
     position: fixed;
     display:flex;
     justify-content: center;
+    padding-top: 10px;
     
     height: min-content;
     font-size: small;
@@ -118,11 +114,14 @@ footer{
 CSS DEL SHOP.HTML
 */
 
+
+
+
+
 .titles{
     font-family: 'Montserrat', sans-serif;
     font-size: 75px;
     margin-left: 100px;
-    margin-top: 2%;
     color: #c1819d;
 }
 
@@ -135,9 +134,15 @@ CSS DEL SHOP.HTML
 }
 
 .espaciosProduc{
-    margin:90px;
-    width: 12%;    
+    
+    position: relative;
+    margin:0px;
+    width: 12%; 
+
 }
+
+
+
 
 /*
 CSS DEL SERVICIO.HTML
@@ -154,8 +159,6 @@ CSS DEL SERVICIO.HTML
 
 
 
-.containerServicios{
-}
 
 .serv1{
     grid-area: producto1;
